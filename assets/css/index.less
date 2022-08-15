@@ -1,0 +1,1078 @@
+/* banner */
+.banner{
+    width:100%;
+    // background:#111111;
+    // background:url('../images/banner.jpg') no-repeat left top;
+    // background-size:cover;
+    background: transparent;
+    padding:12% 0 8%;
+    color:#fff;
+
+    overflow: hidden;
+    text-align: center;
+
+    .title{
+        color:#fff;
+        text-transform: uppercase;
+        font-size:3em;
+        margin-bottom:10px;
+
+        .light{
+            font-family: OSLight;
+        }
+
+        .bold{
+            font-family: OSBold;
+            color:#fcac45;
+        }
+    }
+
+    .remark{
+        font-size:1.5em;
+        font-family: OSLight;
+        margin-bottom:20%;
+
+        span{
+            font-family: OSBold;
+        }
+    }
+
+    .more{
+        width:4em;
+        height:4em;
+        line-height:4em;
+        border:1px solid #fff;
+        color:#fff;
+        border-radius: 100px;
+        margin:0 auto;
+        transition:all linear .3s;
+
+        &:hover{
+            transform:translateY(-20px);
+            box-shadow: 0px 0px 15px 10px #6c6c6c;
+        }
+
+        a{
+            width:100%;
+            height:100%;
+            font-size:1.5em;
+            color:#fff;
+            
+        }
+    }
+}
+
+// about部分
+.about{
+    width: 100%;
+    background: #fff;
+    padding: 5% 0%;
+
+    .container{
+        display: flex;
+
+        .back{
+            flex-shrink: 0;
+        }
+
+        .box{
+            .title{
+                text-transform: uppercase;
+                margin-bottom: 10%;
+
+                .short{
+                    font-family: OSLight;
+                    font-size: 1.5em;
+                }
+
+                .long{
+                    font-size: 2.5em;
+                    white-space: nowrap;
+
+                    span{
+                        &:first-child{
+                            border-bottom:5px solid #fcac45;
+                            padding-bottom:8px;
+                        }
+                        &:last-child{
+                            font-family: OSBold;
+                        }
+                    }
+                }
+            }
+            .remark{
+                color: #767676;
+                font-size:1.2em;
+                font-family: OSLight;
+                line-height:25px;
+                margin-bottom:10%;
+            }
+            .list{
+                margin-bottom:10%;
+
+                li{
+                    line-height: 35px;
+                    font-family: OSLtalic;
+                    font-size:1.3em;
+                    color:#767676;
+
+                    span{
+                        &:last-child{
+                            font-family: OSBold;
+                            color:#545353;
+                        }
+                    }
+                }
+            }
+
+            .more{
+                width:50%;
+                height:50px;
+                line-height: 50px;
+                border: 1px solid #767676;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+                color:#767676;
+                font-size:1.1em;
+                border-radius: 4px;
+
+                transition: all linear .3s;
+
+                &:hover{
+                    transform:translateY(-10px);
+                    box-shadow: 0px 10px 10px 5px #e2e2e2;
+                }
+
+                span{
+                    &:last-child{
+                        margin-top:3px;
+                        margin-left:6px;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1200px){
+        .container{
+            .back{
+                flex-shrink: .5;
+            }
+        }
+    }
+    
+    @media screen and (max-width:1000px){
+        .container{
+            flex-wrap: wrap;
+            
+            .box{
+                .title,.remark,.list{
+                    margin-bottom:5%;
+                }
+    
+                .more{
+                    width:35%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:600px){
+        .container{
+            display: block;
+            width:100%;
+
+            .back{
+                display: none;
+            }
+
+            .box{
+                width:100%;
+
+                .more{
+                    width:45%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:450px){
+        .container{
+            .box{
+                .title{
+                    .short{
+                        font-size:1.2em;
+                    }
+    
+                    .long{
+                        font-size: 1.7em;
+                    }
+                }
+
+                .list{
+                    li{
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                }
+
+                .more{
+                    width:60%;
+                }
+            }
+        }
+        
+    }
+}
+
+// team
+.team{
+    width: 100%;
+    background:#111111;
+    padding:5% 0% 1%;
+    color:#fff;
+
+    .title{
+        font-size:3em;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: OSLight;
+        background:url('../images/title_bg.png') no-repeat center bottom;
+        padding-bottom:15px;
+        margin-bottom:10%;
+
+        span{
+            font-family: OSBold;
+        }
+    }
+.list{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:6%;
+
+    .item{
+        width:22%;
+
+        .avatar{
+            width:15em;
+            height:15em;
+            margin:0 auto;
+            margin-bottom:20px;
+            border-radius: 100%;
+            overflow: hidden;
+        }
+
+        .content{
+            text-align: center;
+
+            .username{
+                font-family: OSBold;
+                font-size:1.5em;
+            }
+
+            .nickname{
+                font-family: OSLight;
+                margin-bottom:20px;
+            }
+
+            .remark{
+                font-family: OSLight;
+            }
+        }
+    }
+}
+.more{
+    width: 8%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+    label{
+            width:1em;
+            height:1em;
+            cursor: pointer;
+            background:#fff;
+            transition:all linear .3s;
+
+            &:hover{
+                background:#fcac45;
+            }
+        }
+    }
+    @media screen and (max-width:1000px){
+        .container{
+            width:100%;
+
+            .list{
+                flex-wrap: wrap;
+                justify-content: flex-start;
+    
+                .item{
+                    width:100%;
+                    display: flex;
+                    margin-bottom:3em;
+
+                    .avatar{
+                        margin:0;
+                        margin-right:2em;
+                        flex-shrink: 0;
+                        border-radius: 0;
+                    }
+
+                    .content{
+                        text-align: left;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: flex-start;
+
+                        div{
+                            width:100%;
+                        }
+
+                        .remark{
+                            height:10em;
+                            overflow-y: auto;
+
+                            /*滚动条样式*/
+                            &::-webkit-scrollbar {
+                                width: 4px;    
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                border-radius: 10px;
+                                box-shadow: inset 0 0 5px rgba(246, 169, 72, 1);
+                                background: rgba(246, 169, 72, 1);;
+                            }
+
+                            &::-webkit-scrollbar-track {
+                                box-shadow: inset 0 0 5px rgba(246, 169, 72, 1);;
+                                border-radius: 0;
+                                background: rgba(0,0,0,0.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* 当前屏幕 <= 500px  */
+    @media screen and (max-width:500px){
+        .container{
+            .title{
+                font-size:2em;
+            }
+
+            .list{
+                .item{
+                    margin-bottom:1em;
+                    align-items: center;
+
+                    .avatar{
+                        height:auto;
+                        flex-shrink: .5;
+                    }
+
+                    .content{
+                        .remark{
+                            height:5em;
+                        }
+                    }
+                }
+                
+            }
+
+            .more{
+                width:20%;
+            }
+        }
+    }
+}
+
+// Services
+.services{
+    width: 100%;
+    background: #fff;
+    padding: 5% 0%;
+
+    .title{
+        font-size:3em;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: OSLight;
+        color: #343434;
+        background:url('../images/title_bg.png') no-repeat center bottom;
+        padding-bottom:25px;
+        margin-bottom:3%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+    span{
+        font-family: OSBold;
+        }
+    }
+    .jieshao{
+        width:100%;
+        margin:0 auto;
+        margin-bottom:10%;
+        text-align: center;
+        font-family: OSLight;
+        color:#767676;
+        font-size:1em;
+        }
+    
+    .list{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom:5%;
+        flex-wrap: wrap;
+
+        .item{
+            width: 22%;
+            .way{
+                width:8em;
+                height:8em;
+                margin:0 auto;
+                margin-bottom:20px;
+                border: 5px solid #fcac45;
+                border-radius: 100%;
+                transition: all linear .3s;
+                text-align: center;
+                overflow: hidden;
+                
+                &:hover{
+                    background: #6c6c6c;
+                }
+                img{
+                    z-index: -1;
+                }
+                
+            }
+
+            .content{
+                text-align: center;
+
+                .design{
+                    font-family: OSBold;
+                    font-size:1.5em;
+                    text-transform: uppercase;
+                    margin-bottom:10px;
+                }
+                .remark{
+                    font-family: OSLight;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1000px){
+        .container{
+            width:100%;
+            .title{
+                font-size:2em;
+            }
+            .list{
+                flex-wrap: wrap;
+                justify-content: flex-start;
+    
+                .item{
+                    width:100%;
+                    display: flex;
+                    margin-bottom:3em;
+
+                    .way{
+                        margin:0;
+                        margin-right:2em;
+                        flex-shrink: 0;
+                        border-radius: 0;
+                    }
+
+                    .content{
+                        text-align: left;
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-content: flex-start;
+
+                        div{
+                            width:100%;
+                        }
+
+                        .remark{
+                            height:10em;
+                            overflow-y: auto;
+
+                            /*滚动条样式*/
+                            &::-webkit-scrollbar {
+                                width: 4px;    
+                            }
+
+                            &::-webkit-scrollbar-thumb {
+                                border-radius: 10px;
+                                box-shadow: inset 0 0 5px rgba(246, 169, 72, 1);
+                                background: rgba(246, 169, 72, 1);;
+                            }
+
+                            &::-webkit-scrollbar-track {
+                                box-shadow: inset 0 0 5px rgba(246, 169, 72, 1);;
+                                border-radius: 0;
+                                background: rgba(0,0,0,0.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:450px){
+        .title{
+            font-size:2em;
+        }
+        .jieshao{
+            width:100%;
+            height:10em;
+            overflow-y: auto;
+
+            /*滚动条样式*/
+            &::-webkit-scrollbar {
+                width: 4px;    
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                box-shadow: inset 0 0 5px rgba(255,255,255, 1);
+                background: rgba(255,255,255, 1);;
+            }
+
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px rgba(255,255,255, 1);;
+                border-radius: 0;
+                background: rgba(0,0,0,0.1);
+            }
+        }
+    }
+}
+    
+// clients
+.clients{
+    width: 100%;
+    background:#111111;
+    padding:5% 0% 1%;
+    color:#fff;
+    .title{
+        font-size:3em;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: OSLight;
+        background:url('../images/title_bg.png') no-repeat center bottom;
+        padding-bottom:15px;
+        margin-bottom:8%;
+
+        span{
+            font-family: OSBold;
+        }
+    }
+    .list{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom:8%;
+    }
+    .name{
+        width: 17%;
+    }
+    .more{
+        width: 8%;
+        margin: 0 auto;
+        margin-bottom: 3%;
+        display: flex;
+        justify-content: space-around;
+    
+        label{
+            width:1em;
+                height:1em;
+                cursor: pointer;
+                background:#fff;
+                transition:all linear .3s;
+    
+                &:hover{
+                    background:#fcac45;
+                }
+            }
+        }
+        @media screen and (max-width:500px){
+            .clients{
+                .list{
+                    .name{
+                        width: 50%;
+                    }
+                }
+                    
+            }
+    
+                .more{
+                    width:20%;
+                }
+            }
+        }
+
+// testimonials
+.testimonials{
+    width: 100%;
+    background:#111111;
+    padding:5% 0% 1%;
+    color:#fff;
+
+    .title{
+        font-size:3em;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: OSLight;
+        background:url('../images/title_bg.png') no-repeat center bottom;
+        padding-bottom:30px;
+        margin-bottom:5%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        span{
+            font-family: OSBold;
+        }
+    }
+    
+    .remark{
+        width:80%;
+        margin:0 auto;
+        margin-bottom:7%;
+        text-align: center;
+        font-family: OSLight;
+        color:#fff;
+        font-size:1.2em;
+    }
+    .name{
+        width:80%;
+        margin:0 auto;
+        margin-bottom:7%;
+        text-align: center;
+        font-family: OSLight;
+        color:#fff;
+        font-size:1.2em;
+
+        span{
+            color: #767676;
+        }
+    }
+    .more{
+        width: 8%;
+        margin: 0 auto;
+        margin-bottom: 3%;
+        display: flex;
+        justify-content: space-around;
+    
+        label{
+            width:1em;
+            height:1em;
+            cursor: pointer;
+            background:#fff;
+            transition:all linear .3s;
+    
+            &:hover{
+                background:#fcac45;
+                }
+            }
+        }
+        @media screen and (max-width:500px){
+            .container{
+                .more{
+                    width:20%;
+                }
+            }
+        }    
+}
+
+// work
+.work{
+    width:100%;
+    padding:5% 0% 1%;
+    background:#fff;
+
+    .title{
+        font-size:3em;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: OSLight;
+        background:url('../images/title_bg.png') no-repeat center bottom;
+        padding-bottom:30px;
+        margin-bottom:5%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        span{
+            font-family: OSBold;
+        }
+    }
+
+    .remark{
+        width:80%;
+        margin:0 auto;
+        margin-bottom:7%;
+        text-align: center;
+        font-family: OSLtalic;
+        color:#767676;
+        font-size:1.2em;
+    }
+
+    .box{
+        .top{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom:2%;
+
+            .left{
+                text-transform: uppercase;
+                font-family: OSBold;
+                font-size:1.3em;
+            }
+
+            .right{
+                a{
+                    color:#767676;
+                    font-size:1.3em;
+                    padding:0 1em;
+                    border-right:1px solid #767676;
+                    transition: all linear .3s;
+
+                    &:hover{
+                        color:#fcac45;
+                    }
+
+                    &:last-child{
+                        border-right: 0px;
+                    }
+                }
+                
+
+
+            }
+
+            .cate{
+                display: none;
+            }
+        }
+
+        .list{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .item{
+                width:23%;
+                margin-bottom:2%;
+                position: relative;
+                overflow: hidden;
+
+                &:hover .back{
+                    top: 2px;
+                }
+
+                .back{
+                    position: absolute;
+                    left:0;
+                    top:-100%;
+                    width:100%;
+                    height:100%;
+                    background:#222222;
+                    text-align: center;
+                    padding-top:20%;
+                    transition: all ease-in-out .3s;
+
+                    .subject{
+                        color:#fff;
+                        font-size:1.3em;
+                        text-transform: uppercase;
+                        font-family: OSBold;
+                    }
+
+                    .name{
+                        color:#767676;
+                        font-size:1.1em;
+                        font-family: OSLight;
+                    }
+
+                    .action{
+                        width:100%;
+                        position: absolute;
+                        left:0;
+                        bottom:20%;
+                        text-align: center;
+                        z-index:0;
+
+                        .add{
+                            width:1.2em;
+                            height:1.2em;
+                            line-height:1.2em;
+                            font-size:2.5em;
+
+                            margin:0 auto;
+                            color:#fcac45;
+                            border:1px solid #fcac45;
+                            border-radius: 100px;
+                            text-align: center;
+                            font-family: OSLight;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* 当前屏幕 <= 1000px */
+    @media screen and (max-width:1000px){
+        .container{
+            width:100%;
+        }
+    }
+
+    /* 当前屏幕 <= 850px */
+    @media screen and (max-width:850px){
+        .box{
+            .list{
+                .item{
+                    width:31%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:700px){
+        .box{
+            .top{
+                .right{
+                    display: none;
+                }
+
+                .cate{
+                    display: block;
+                }
+            }
+
+            .list{
+                .item{
+                    width:46%;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:500px){
+        .box{
+            .list{
+                justify-content: center;
+
+                .item{
+                    width:100%;
+                    margin-bottom:5%;
+                    
+                    img{
+                        width:100%;
+                        height:100%;
+                    }
+
+                    .back{
+                        .action{
+                            bottom:30%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width:450px){
+        .title{
+            font-size:2em;
+        }
+        .remark{
+            width:100%;
+            height:10em;
+            overflow-y: auto;
+
+            /*滚动条样式*/
+            &::-webkit-scrollbar {
+                width: 4px;    
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                box-shadow: inset 0 0 5px rgba(255,255,255, 1);
+                background: rgba(255,255,255, 1);;
+            }
+
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px rgba(255,255,255, 1);;
+                border-radius: 0;
+                background: rgba(0,0,0,0.1);
+            }
+        }
+    }
+}
+
+// contact
+.contact{
+    width:100%;
+    padding:5% 0% 1%;
+    background:#fff;
+
+    .title{
+        font-size:3em;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: OSLight;
+        background:url('../images/title_bg.png') no-repeat center bottom;
+        padding-bottom:30px;
+        margin-bottom:5%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        span{
+            font-family: OSBold;
+        }
+    }
+
+    .remark{
+        width:80%;
+        margin:0 auto;
+        margin-bottom:7%;
+        text-align: center;
+        font-family: OSLtalic;
+        color:#767676;
+        font-size:1.2em;
+    }
+
+    .form{
+        // 第一行
+        .top{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom:20px;
+
+            .left,.right{
+                width:48%;
+
+                .name{
+                    font-size:1.2em;
+                    sup{
+                        color:red;
+                    }
+                }
+
+                input{
+                    display: block;
+                    width:100%;
+                    height:2em;
+                    line-height: 2em;
+                    font-size:1.3em;
+                    transition: all linear .3s;
+                    border:1px solid #6c6c6c;
+
+                    &:focus{
+                        transform:translateY(-10px);
+                        box-shadow: 0px 10px 10px 1px #c5c5c5;
+                    }
+
+                }
+            }
+        }
+        // 第二行
+        .message{
+            width:100%;
+            margin-bottom:20px;
+
+        .name{
+            font-size:1.2em;
+            sup{
+                    color:red;
+                }
+            }
+
+        textarea{
+            width:100%;
+            height:10em;
+            font-size:1.3em;
+            transition: all linear .3s;
+            border:1px solid #6c6c6c;
+
+            &:focus{
+                transform:translateY(-10px);
+                box-shadow: 0px 10px 10px 1px #c5c5c5;
+                }
+            }
+        }
+        .bottom{
+            width: 100%;
+            text-align: right;
+
+            .send{
+                width: 8em;
+                height: 2.5em;
+                line-height: 1.1em;
+                font-size:1.1em;
+                text-align: center;
+                border:0px;
+                color:#fff;
+                background:#fcac45;
+                font-family: OSLight;
+                transition: all linear .3s;
+
+                &:hover{
+                    transform:translateY(-10px);
+                    box-shadow: 0px 10px 10px 1px #c5c5c5;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:500px){
+        .title{
+            font-size:2em;
+        }
+
+        .remark{
+            width:100%;
+            height:10em;
+            overflow-y: auto;
+
+            /*滚动条样式*/
+            &::-webkit-scrollbar {
+                width: 4px;    
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                box-shadow: inset 0 0 5px rgba(255,255,255, 1);
+                background: rgba(255,255,255, 1);;
+            }
+
+            &::-webkit-scrollbar-track {
+                box-shadow: inset 0 0 5px rgba(255,255,255, 1);;
+                border-radius: 0;
+                background: rgba(0,0,0,0.1);
+            }
+        }
+
+        .form{
+            .top{
+                flex-wrap: wrap;
+                margin-bottom: 0px;
+
+                .left,.right{
+                    width:100%;
+                    margin-bottom:20px;
+                }
+            }
+
+            .bottom{
+                text-align: center;
+            }
+        }
+    }
+}
